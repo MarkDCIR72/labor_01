@@ -4,7 +4,7 @@ kor = int(input("Hány éves vagy?"))
 gyerek = ""
 if kor > 25:
     gyerek = input("Van 3 gyereked és nő vagy? (igen/nem)?")
-    if gyerek not in  ["igen", "Igen", "i", "I", "nem", "Nem", "n", "N"]:
+    while gyerek not in  ["igen", "Igen", "i", "I", "nem", "Nem", "n", "N"]:
         gyerek = input("HIBA \nVan 3 gyereked és nő vagy? (igen/nem)?")
 brutto = int(input("Mennyi a bruttó jövedelmed?"))
 if kor <= 25 or gyerek in ["igen", "Igen", "i", "I"]:
